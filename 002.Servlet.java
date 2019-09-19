@@ -7,13 +7,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-@WebServlet(urlPatterns = {"/cs"})
+
+@WebServlet(urlPatterns ={"/cs"})
 public class Servlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        /**返回值**/
         PrintWriter writer=resp.getWriter();
-        writer.println("我是Servlet");
-
+        writer.println("我是来自Servlet");
     }
 }
